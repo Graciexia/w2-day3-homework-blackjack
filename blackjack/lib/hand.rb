@@ -17,8 +17,8 @@ class Hand
   def show_hand(show_first_card)
     first_time_thru_loop = true
     @hand_cards.each do |card|
-      if first_time_thru_loop
-        if show_first_card
+      if first_time_thru_loop == true
+        if show_first_card == true
           print card.display
         else
           print card.display_hidden
